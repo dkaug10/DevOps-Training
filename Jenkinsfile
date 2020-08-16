@@ -1,7 +1,11 @@
 node {
 
-stage 'checkout'
-git 'https://github.com/Mohamedji/CloudenabledWebApp.git'
+stage 'git checkout'
+git 'https://github.com/dkaug10/DevOps-Training.git'
+
+
+stage 'clean'
+sh 'mvn clean'
 
 stage 'compile'
 sh 'mvn compile'
